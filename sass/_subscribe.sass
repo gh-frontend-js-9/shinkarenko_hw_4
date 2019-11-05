@@ -1,0 +1,70 @@
+.subscribe
+    padding: 42px 0
+    background: #f4f4f4
+
+.subscribe-block
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+
+.subscribe-block__title
+    margin-bottom: 20px
+    text-align: center
+    font-weight: 700
+    font-size: 24px
+    line-height: 36px
+    color: #323232
+
+.subscribe-block-form__email
+    max-width: 335px
+    margin-right: 0
+    margin-bottom: 20px
+    padding: 12px 77px 15px 30px
+    font-size: 14px
+    line-height: 17px
+    color: #c8cbcf
+    border: none
+    border-radius: 30px
+
+.subscribe-block-form__btn
+    display: block
+    max-width: 140px
+    margin: 0 auto
+    padding: 12px 30px 12px 25px
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase
+    background-color: #8d81ac
+    color: #fff
+    border: none
+    border-radius: 30px
+    cursor: pointer
+
+@media(min-width: 480px)
+    .subscribe-block__title
+        margin-bottom: 30px
+        font-size: 27px
+        line-height: 60px
+        text-align: left;
+
+    .subscribe-block-form__email
+        margin-right: 15px
+        margin-bottom: 0
+
+    .subscribe-block-form__btn
+        display: inline
+        margin: auto
+
+@media(min-width: 768px)
+    .subscribe-block__title
+        margin-bottom: 0
+        font-size: 30px
+        color: #635c73
+    
+    .subscribe-block-form__email
+        padding: 12px 111px 15px 30px
+    
+@media(min-width: 980px)
+    .subscribe-block
+        flex-direction: row

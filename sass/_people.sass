@@ -1,0 +1,212 @@
+.people
+    margin-top: 0px
+
+/*people-top*/
+
+.people-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 300px
+    margin: 50px auto 25px auto
+
+.people-name__text
+    margin: 0
+    font-size: 24px
+    line-height: 32px
+    color: #635c73
+
+.people-nickname__text
+    font-size: 16px
+    line-height: 32px
+    color: #8d81ac
+
+/*people-main*/
+
+.people-main
+    position: relative
+    max-width: 720px
+    width: 100%
+    margin: 0 auto
+    padding-bottom: 0px
+    text-align: center
+    border-bottom: none
+
+.people-main__text
+    max-width: 220px
+    width: 100%
+    margin: 0 auto 20px auto
+    font-family: "Source Sans Pro"
+    font-size: 17px
+    line-height: 24px
+    color: #333333
+
+.people-main__text a
+    font-family: "Source Sans Pro"
+    font-size: 20px
+    line-height: 32px
+    text-decoration: none
+    color: #8d81ac
+
+/*people-main__btn*/
+
+.people-main__btn
+    position: absolute
+    top: 10%
+    z-index: 1
+    font-size: 0
+    background: inherit
+    color: transparent
+    border: none
+    cursor: pointer
+    transform: translateY(-50%)
+
+    &::after
+        content: ""
+        display: block
+        width: 16px
+        height: 16px
+        border-top: 2px solid #474747
+        border-left: 2px solid #474747
+
+.people-main__btn_prev
+    top: 33%
+    left: 0%
+    transform: rotate(-45deg)
+
+.people-main__btn_next
+    top: 33%
+    right: 0%
+    transform: rotate(135deg)
+
+.people-main__time
+    font-size: 16px
+    line-height: 32px
+    color: #848e97
+
+/*people-bottom*/
+
+.people-bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 720px
+    width: 100%
+    margin: 20px auto auto auto
+
+.people-bottom-item
+    margin-right: 0px
+
+    &:last-child
+        margin-right: 0px
+
+.people-social
+    display: flex
+    align-items: center
+    max-width: 240px
+    padding: 10px 70px 10px 24px
+    text-decoration: none
+    background-color: #f3f3f3
+    border: none
+    border-radius: 5px
+    cursor: pointer
+
+.people-socila__img
+    margin-right: 40px
+
+.people-social__text
+    font-size: 21px
+    line-height: 32px
+    color: #000
+
+.people-followers
+    display: block
+    max-width: 110px
+    margin: 5px auto 10px auto
+    font-size: 14px
+    line-height: 32px
+    color: #848e97
+
+.people-social-facebook
+    display: flex
+    align-items: center
+    max-width: 240px
+    padding: 10px 42px 10px 25px
+    text-decoration: none
+    background-color: #3b5998
+    border: none
+    border-radius: 5px
+    cursor: pointer
+
+.facebook_color
+    color: #fff
+
+.twitter_color
+    color: #fff
+
+.twitter_bg
+    background-color: #26a6d1
+
+.twitter_count
+    max-width: 120px
+
+.facebook_count
+    max-width: 140px
+
+@media(min-width: 480px)
+    .people
+        margin-top: 670px
+
+    .people-main__text
+        max-width: 400px
+
+    .people-bottom
+        margin-top: 55px
+
+@media(min-width: 750px)
+    .people
+        margin-top: 0px
+
+    .people-main
+        padding-bottom: 55px
+        border-bottom: 1px solid #c7c7c7
+    
+    .people-main__text
+        font-size: 20px
+        line-height: 32px
+    
+    .people-main__btn_next
+        right: -1%
+    
+    .people-main__btn_prev
+        left: -1%
+    
+    .people-bottom
+        flex-direction: row
+    
+    .people-bottom-item
+        margin-right: 48px
+    
+    .people-followers
+        margin: 5px auto 0px auto
+    
+@media(min-width: 820px)
+    .people-top
+        margin: 100px auto 25px auto
+
+    .people-main__text
+        max-width: 800px
+    
+    .people__btn_next 
+        right: -4%
+
+    .people-main__btn_prev
+        left: -4%;
+    
+@media(min-width: 1020px)
+    .people-main__btn_prev
+        left: -20%
+    
+    .people-main__btn_next
+        right: -20%
+    
